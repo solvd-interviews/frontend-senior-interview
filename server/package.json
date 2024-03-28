@@ -1,0 +1,32 @@
+{
+    "name": "solvd_challenge-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/www/app.js",
+        "build": "npx tsc --project tsconfig.prod.json",
+        "dev": "yarn build && yarn start",
+        "test": "jest --detectOpenHandles"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.2",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "mongoose": "^8.0.2"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/jest": "^29.5.10",
+        "@types/node": "^20.10.3",
+        "@types/supertest": "^2.0.16",
+        "jest": "^29.7.0",
+        "supertest": "^6.3.3",
+        "ts-jest": "^29.1.1",
+        "typescript": "^5.3.2"
+    }
+}
